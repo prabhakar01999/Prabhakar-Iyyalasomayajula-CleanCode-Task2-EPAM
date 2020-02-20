@@ -38,7 +38,7 @@ public class Construction implements MaterialStandards{
     }
 
     public Integer highStandardMaterials() {
-        if (automation == false)
+        if (!automation)
             return 1800 * houseArea;
         return 2500;
     }
